@@ -1,0 +1,802 @@
+/**************************index********************/
+body,*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px inset;
+}
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.header{
+	position: relative;
+	background-color: #522A5C;
+	height:80px;
+	width:100%;
+}
+.menu{
+	position:relative;/*加上这一句保证与下面的github的float:right不会在float的世界相遇*/
+	margin: 0 auto;/*这一句为居中*/
+	width: 980px;
+	height: 80px;
+	/*display: inline-block;*/
+}
+.logo{
+	/*display: inline-block;*/
+	line-height: 80px;
+	font-size: 80px;
+	color:#fffff1;
+}
+.menu ul{
+	/*display: inline-block;*/
+	font-family: "宋体";
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+	list-style: none
+}
+/*.clear{
+	clear: both;
+}*/
+.menu ul li{
+	color: #ffffff;
+	margin-left: 28px;
+	display: inline;
+}
+.github{
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+}
+/*****************************header展示结束*********************/
+/*大的背景图片展示的开始*/
+.main{
+	position: relative;
+	overflow: hidden;
+}
+.main img{
+	width:100%;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.content1{
+	position: absolute;
+	padding: 10px 10px 30px 10px;
+	width: 300px;/*这个要求上没讲到多大*/
+	right: 194.5px;
+	bottom: 0px;
+				/* make the div translucent */
+   opacity: 0.6;                /* Firefox, Safari(WebKit), Opera)*/
+  	filter: "alpha(opacity=60)"; /* IE 8 */
+	filter: Alpha(Opacity=50); 
+  	zoom: 1;                     /* needed in IE up to version 7, or set width or height to trigger "hasLayout" */ 
+	background-color: #ffffff;
+}
+.content1 .title{
+	text-align: right;
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+.content1 .neirong{
+	text-indent: 24px;
+	line-height: 150%;
+	font-size: 12px;
+}
+.picmain{
+	position: relative;
+	background-color: #eeeeee;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+.pic{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 300px;
+	height: 180px;
+}
+/*大的背景图片展示的结束*/
+.center{
+	width: 980px;/*这一句不加的话就会使下面的一句margin:0 auto不起作用*/
+	margin:0 auto;
+	overflow: hidden;
+	display: table; 
+}
+.wrap2{
+	display: table-cell;
+	border-spacing: 100px; 
+	float:left;
+	margin-bottom:-10000px;
+	padding-bottom:10000px;
+	margin-top: 10px;
+	width: 320px;
+	background-color: #ffffff;
+}
+.wrap2center{
+	margin-left:10px;
+	margin-right:10px;
+}
+.wrap2 p{
+	margin: 15px 30px 25px 30px;
+	font-size: 17px;
+	text-indent: 2em;
+}
+/**图片展示的结束**/
+/*****************************自我介绍的开始*********************/
+.selfIntroducation{
+	position:relative;
+	height: 550px;
+	width: 980px;
+	margin: 0 auto;
+}
+.touxiang{
+	position: absolute;
+	margin:0 auto;
+	left: 50%;
+	/*这里为什么是44%呢*/
+}
+.touxiang img{
+	width: 160px;
+	height:160px;
+	margin-left: -80px;
+	margin-top: -50px;
+	border-radius: 80px;
+}
+.Iam{
+	top: 160px;
+	width: 600px;
+	position: relative;
+	margin:0 auto;
+
+}
+.selfIntroducation p.myName{
+	font-size: 20px;
+	font-family: "Century Gothic";
+	text-align: center;
+	margin-bottom: 20px;
+}
+.selfIntroducation .self{
+	font-size: 14px;
+	text-indent: 2em;
+}
+/*自我介绍的结束*/
+/*****************footer的开始*******************/
+.footer{
+	height:380px;
+	background-color: #000000;
+	position:relative;
+}
+.footer .ft-daohang{
+	height: 30px;
+	border-bottom: 1px solid #333333;
+	color:#ffffff;
+}
+.ft-daohang>ul{
+	overflow: hidden;
+	line-height: 30px;
+	width: 200px;
+	margin:0 auto;
+}
+.ft-daohang>ul a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight:normal;
+	margin-right: 16px;
+}
+.ft-daohang>ul>.right{
+	margin-right: 0px;
+}
+.link-wrap{
+	width:980px;
+	margin:0 auto;
+	color: #ffffff;
+}
+.link{
+	margin-top: 38px;
+	margin-right: 122px;
+	float:left;
+	color: #666;
+	font-size: 12px;
+	list-style: none;
+}
+.link h3{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.link-wrap .link a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	display: block;
+}
+.link-wrap .link a:hover{
+	text-decoration: underline;
+}
+.link-wrap .link .a-hover{
+	text-decoration: underline;
+}
+.git{
+	width: 48px;
+	margin-left: -24px;
+	position: absolute;
+	height: 60px;
+	bottom: 0px;
+	left: 50%;
+}
+.git p{
+	font-size: 8px;
+	color: #ffffff;
+}
+.git img{
+	bottom: 0px;
+	position: absolute;
+	left: 50%;
+	margin-left: -32%;/*这一句为什么是-32% 才好像居中呢 费解啊。*/
+}
+/**************************index end********************/
+/**************************blog start******************************/
+
+.backgroundcolor{
+	overflow: hidden;
+	padding-bottom: 180px;
+	background-color:#eeeeee;
+}
+.wrap1{
+	width:980px;	
+	overflow: hidden;
+	margin:20px auto 0 auto;
+}
+.blog-right{
+	float: right;
+	width: 260px;
+}
+/***********右边的keyword Search部分******************/
+.search{/****这里当焦点集中到这里的话css貌似不能改变其
+	父级标签的样式所以这里先放一放先学了js再来弄一下吧******/
+	width: 220px;
+	height: 40px;
+	margin-bottom:10px;
+	background-color: #ffffff;
+	padding: 20px;
+}
+.search>div{
+	border:1px solid #dddddd;
+	overflow: hidden;
+}
+.search>div img{
+	width: 50px;
+	height: 40px;
+	float: left;
+}
+.search>div input{
+	width: 120px;
+	font-size: 14px;
+	line-height: 40px;
+	float: left;
+}
+/*.search>div:focus{这一句在这里行不通啊
+	border:1px solid black;
+}*/
+.go a{
+	padding: 10px 6px 10px 6px;/*****这里不知道用的是什么字体将就一下吧*******/
+	height: 20px;
+	width: 36px;/**这里为什么不是50而是48px呢想不明白啊**/
+	text-align: center;
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 16px;
+	background-color: #dddddd;
+}
+/*******右边导航部分部分******/
+.navigate{
+	border-top:1px solid #dddddd;
+	background-color: #ffffff;
+	margin-bottom:10px;
+}
+.navigate ul{
+	list-style: none;
+	overflow: hidden;
+}
+.navigate ul li{
+	overflow: hidden;
+	width: 241px;
+	border-bottom: 1px solid #dddddd;
+	border-left: 3px solid #dfc6e6;
+
+}
+.navigate ul li a{
+	padding-left: 16px;
+	height: 48px;
+	color: #666666;
+	display: block;
+	line-height: 48px;
+	text-decoration: none;
+}
+.navigate ul li:hover{/**这里的只有鼠标悬浮才出现样式,样式如果要保留的话无法只用css实现对吗？**/
+	border-left: 3px solid  #522A5C;
+}
+
+/****************右边的日历部分***********************/
+.calendar{
+	height:200px;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.calendar .calendar-title{
+	position: relative;
+	padding-right: 10px;
+	padding-left: 10px;
+/*	overflow: hidden;*/
+/*	border:1px solid #111111;*/
+	width: 200px;
+	height: 20px;
+}
+.calendar .calendar-title a{
+	float: left;
+	font-size: 100%;
+	color: #773c88;
+	line-height: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.calendar .calendar-title a.pre{/*********这里三个类名叠加在一起选择不了元素是怎么***********/
+	/*	width:18px;*/
+	margin-right: auto;
+}
+.calendar .calendar-title a.date{
+	width: 183px;/**计算得出的结果总感觉不怎么好*/
+	text-align: center;
+}
+.calendar .calendar-title a.next{
+	float: right;
+}
+.row{
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.row .day{
+	color: #999999;
+	font-size: 10px;
+	text-align: center;
+	line-height: 20px;
+	width:30px;
+	height: 20px;
+	float: left;
+}
+.row .weight{
+	font-weight: bold;
+	color: #773c88;
+}
+.row .today{
+	background-color:#773c88;
+	color:#ffffff;
+}
+/****************右边的tag部分***********************/
+.tag{
+	padding:10px;
+	background-color: #ffffff;
+	height:200px;
+}
+.tagtitle{
+	color: #999999;
+	width: 50px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.tag .bigTag{
+	height: 40px;
+}
+.tag .bigTag span{
+	height: 40px;
+	line-height: 40px;
+	color: #773c88;
+}
+.weight{
+	font-weight: bold;
+}
+.big{
+	font-size:27px;
+	font-weight:bold;
+}
+.middle{
+	font-size: 20px;
+}
+.small{
+	font-size: 10px;
+}
+/*****************blog 左边的文章部分******************/
+.wrap3{
+	width: 710px;
+	float: right;
+	margin-right:10px;
+}
+.article {
+	position: relative;
+	padding: 20px;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.title{
+	font-size: 16px;
+	color: #a660b7;
+	width: 710px;
+	height:20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.subtitle{
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.new{
+	position: absolute;
+	height: 80px;
+	width:50px;
+	margin-left: -70px;
+}
+.new div{
+	height: 40px;
+	line-height: 40px;
+	font-size:15px;
+	text-align:center;
+	background-color:#a660b7;
+	color: #ffffff;
+}
+.new .time{
+	background-color:#522A5C;
+	text-align:center;
+}
+.article-content{
+	text-indent: 2em;
+	font-size: 12px;
+	line-height: 25px;
+}
+.article-last{
+	margin-bottom: 35px;
+}
+.blogtime{
+	display: inline-block;
+	position:absolute;
+	color:#999999;
+	font-size: 12px;
+	bottom: 20px;
+	right:20px;
+}
+.page{
+	width: 575px;
+	margin:0 auto;
+}
+.page a{
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background-color: #ffffff;
+	margin-right: 9px;
+	float:left;
+	color: black;
+	font-size: 14px;
+}
+.margin-last{
+	margin:0px;
+}
+.page .currentpage{
+	color: #ffffff;
+	background-color:#a660b7;
+}
+/***********************blog的结束*****************************/
+/*************************gallery的开始********************/
+/***********************这里是tab标签的开始******************/
+.tab{
+	background-color: #ffffff;
+	height: 50px;
+	overflow: hidden;
+	width: 685px;
+}
+.tabitem{
+	float: left;
+	padding:15px 20px 13px 20px;
+	border-top: 3px solid #ffffff;
+}
+.tabitem:hover{
+	background-color: #000;
+	color: #ffffff;
+}
+.borderbottom{
+	border-bottom:1px solid #eeeeee;
+}
+.borderright{
+	border-right:1px solid #eeeeee;
+}
+.borderleft{
+	border-right:1px solid #eeeeee;
+}
+.border1{
+	border-top: 3px solid  #dfc6e6;
+}
+.border2{
+	border-top: 3px solid #522A5C; 
+}
+.border3{
+	border-top: 3px solid #5900b2;
+}
+.border4{
+	border-top: 3px solid #8c2300;
+}
+.border5{
+	border-top: 3px solid #d9a300;
+}
+/****************这里是tab标签的结束************************/
+/******************人气排行榜的开始****************************************/
+.chart{
+	height:240px;
+	background-color: #ffffff;
+}
+.chart>div{
+	padding-left: 10px;
+}
+.charttitle{
+	font-size: 15px;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#666666;
+}
+.chartItem{
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.chartItem div{
+	margin-right: 8px;
+	float:left;
+}
+.chartItem .chartNumber{
+	text-align: center;
+	height: 18px;
+	width: 18px;
+	background-color:  #522A5C;
+	border-radius: 10px;
+}
+.tiao{
+	width: 100px;
+	border:1px solid #522A5C;
+}
+.tiao div{
+	height: 16px;
+	background-color: #522A5C;
+}
+.tiao .hundred{
+	width: 100%;
+
+}
+.tiao .ninety{
+	width: 90%;
+
+}
+.tiao .seventy{
+	width: 70%;
+}
+.tiao .forty{
+	width: 40%;
+}
+.tiao .thirty{
+	width:30%;
+}
+/******************人气排行榜的结束****************************************/
+/******************瀑布流布局的开始***************************************/
+.wrap5{
+	width:670px;
+	float: right;
+	margin-right: 10px;
+	padding:20px 20px 30px 20px;
+	background-color: #ffffff;
+}
+.wrap5>.picwrap{
+	float: left;
+	width: 330px;
+	background-color:#ffffff;
+}
+.marginright10{
+	margin-right: 10px;
+}
+.marginbottom10{
+	margin-bottom: 10px;
+}
+.picwrap>div{
+	width: 330px;
+	float: left;
+}
+.picture{
+	width: 100%;
+}
+.picture img{
+	width:100%;
+}
+.description{
+	padding:10px;
+	background-color: #223344;
+	overflow: hidden
+}
+.quan{
+	border-radius:15px;
+	color: #ffffff;
+	background-color: #334455;
+	text-align: center;
+	border:1px solid #ffffff;
+	line-height: 28px;
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+}
+.imgDescription{
+	float: left;
+}
+.imgDescritionSmall{
+	width: 100px;
+}
+.imgDescriptionTitle{
+	font-size: 15px;
+}
+.imgDescriptionContent{
+	font-size: 10px;
+}
+.picwrap ul{
+	list-style: none;
+}
+.pubuliu{
+	float: left;
+	width:160px;
+}
+/***********瀑布流结束**************************/
+/***********加载更多开始**************************/
+.more{
+	float: right;
+	position: relative;
+	margin-top: 10px;
+	margin-right: 270px;
+	width: 710px;
+	height: 50px;
+	background-color: #ffffff;
+}
+.center2{
+	left:50%;
+	padding-top: 20px;
+	width: 110px;
+	position: absolute;
+	margin-left: -55px;
+}
+.center2 span{
+	margin-left: 10px;
+	font-size: 10px;
+	line-height: 22px;
+	position: absolute;
+}
+/***********加载更多的结束**************************/
+/***************关于我的开始***********************/
+.about{
+	margin:100px auto 0 auto;
+	width: 980px;
+}
+.portrait{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	left: 50%;
+	margin-left: -89px;
+	margin-top: -60px;
+	background-image: url(../image/touxiang.jpg);
+	background-size: 160px 160px;
+	border-radius: 160px;
+	border:9px solid #eeeeee;
+}
+.left{
+	width: 49.5%;
+	background-color: #ffffff;
+	float: left;
+	height: 900px;
+}
+.right1{
+	overflow: hidden;
+	height: 900px;
+	background-color: #ffffff;
+	width: 49.5%;
+	float: right;
+}
+.myNameInAbout{
+	margin-top:130px;
+	margin-left: 360px;
+}
+.selfInAbout{
+	zoom:1;
+	overflow: hidden;/****这一句本来是想触发bfc的但是margin还是重叠了*****/
+	margin-left: 30px;
+	margin-top: 130px;
+	text-indent: 2em;
+	margin-right: 140px;
+	margin-bottom: 20px;
+}
+.conectionimg{
+	height: 100px;
+	width: 100px;
+	left: 50%;
+	background-image: url(../image/phone.png);
+	position: absolute;
+	margin-left: -58px;
+	border-radius: 58px;
+	border: 8px solid #eeeeee;
+}
+.fontSize20{
+	font-size: 20px;
+}
+.connectionWay{
+	margin-left: 340px;
+	margin-top: 240px;
+}
+.conection{
+	zoom:1;
+	overflow: hidden;/****这一句本来是想触发bfc的但是margin还是重叠了*****/
+	margin-top: 175px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.myschoolImg{
+	height: 100px;
+	width: 100px;
+	left: 50%;
+	position: absolute;
+	margin-left: -58px;
+	border-radius: 58px;
+	background-size: 100px 100px;
+	background-image: url(../image/hlgdx.jpg);
+	border: 8px solid #eeeeee;
+}
+.education{
+	margin-left: 340px;
+	margin-top: 210px;
+}
+.Time{
+	margin-top: 177px;
+}
+.hightSchoolTime{
+	text-align: center;
+	font-size: 20px;
+	height: 20px;
+	width: 60px;
+	background-color: #ffffff;
+	left: 50%;
+	position: absolute;
+	margin-left: -38px;
+	border-radius: 20px;
+	border: 8px solid #eeeeee;
+}
+.hightSchoolName{
+	padding-top: 10px;
+	margin-left: 50px;
+}
+.time2{
+	margin-top: 30px;
+}
+.universityName{
+	line-height: 23px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+.major{
+	font-size: 0.8em;
+}
+.paddintbottom0{
+	padding-bottom: 0px;
+}
